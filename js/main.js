@@ -19,6 +19,14 @@ $(document).ready(function () {
         dots: true,
         nextArrow: ' <button class="btn slick-btn slick-next active"></button>',
         prevArrow: ' <button class="btn slick-btn slick-prev"></button>',
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     })
 
     $(".slider-review .slick-btn").click(function (e) { 
