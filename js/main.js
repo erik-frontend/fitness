@@ -55,4 +55,13 @@ $(document).ready(function () {
         $(this).siblings().slideDown();
         $(this).addClass("active");
     })
+
+    // video
+
+    $(".video-btn").click(function (e) { 
+        e.preventDefault();
+        $(".trainning-video").addClass("hide")
+        $(".video-btn").addClass("hide")
+        $(".video-btn").siblings().trigger("play");
+    });
 });
