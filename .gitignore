@@ -1,0 +1,7 @@
+# ignore folder
+
+/.vscode
+/scss
+
+/css/main.min.css.map
+/css/main.css.map
