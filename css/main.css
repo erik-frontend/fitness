@@ -1170,12 +1170,27 @@ main {
   border-radius: 24px;
   background: #FFFFFF;
   color: #1C1C1E;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.allplans .plan-block.active {
+  background: #064BB4;
+  pointer-events: none;
+}
+.allplans .plan-block.active .prise {
+  color: #FFFFFF;
+}
+.allplans .plan-block.active .plan-title {
+  color: #FFFFFF;
+}
+.allplans .plan-block.active .plan-text {
+  color: #F2F2F7;
 }
 .allplans .plan-prise {
   display: flex;
   align-items: flex-end;
   gap: 5px;
-  color: var(--grayscale-100, #1C1C1E);
+  color: #1C1C1E;
   text-align: center;
   font-size: 40px;
   line-height: 48px;
@@ -1208,6 +1223,16 @@ main {
   letter-spacing: 0.07px;
   line-height: 22px;
   text-align: center;
+}
+.allplans .plan-table {
+  margin-top: 40px;
+  position: relative;
+}
+.allplans .table {
+  display: block;
+  width: 100%;
+  color: #1c1c1e;
+  background: white;
 }
 
 .footer {

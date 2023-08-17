@@ -64,4 +64,10 @@ $(document).ready(function () {
         $(".video-btn").addClass("hide")
         $(".video-btn").siblings().trigger("play");
     });
+
+    // plan prise
+    $(".plan-block").click(function(){
+        $(".plan-block").removeClass("active")
+        $(this).addClass("active")
+    })
 });
