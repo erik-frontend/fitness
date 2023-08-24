@@ -1232,7 +1232,38 @@ main {
   display: block;
   width: 100%;
   color: #1c1c1e;
-  background: white;
+  background: #FFFFFF;
+}
+.allplans .table tbody {
+  width: 100%;
+  display: block;
+}
+.allplans .table tr:first-child {
+  padding: 16px 12px;
+}
+.allplans .table tr:first-child th {
+  color: #064BB4;
+  font-family: "GeneralSans-Semibold";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.09px;
+}
+.allplans .table tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 12px;
+  width: 100%;
+}
+.allplans .table td {
+  width: 25.5%;
+  border: 1px solid;
+}
+.allplans .table td:first-child {
+  width: 20%;
+}
+.allplans .table td:not(:first-child) {
+  text-align: center;
 }
 
 .footer {
