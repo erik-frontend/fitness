@@ -65,14 +65,9 @@ $(document).ready(function () {
         $(".video-btn").siblings().trigger("play");
     });
 
-    // plan prise
-    $(".plan-block").click(function(){
-        $(".plan-block").removeClass("active")
-        $(this).addClass("active")
-    })
-
     // table tabs
-    $(".plan-block").on("click", ".plan-block:not(.active)", function(){
+    
+    $(".plans").on("click", ".plan-block:not(.active)", function(){
         $(this).addClass("active")
             .siblings()
             .removeClass("active")
