@@ -1227,12 +1227,23 @@ main {
 .allplans .plan-table {
   margin-top: 40px;
   position: relative;
+  height: 620px;
 }
 .allplans .table {
   display: block;
   width: 100%;
   color: #1c1c1e;
-  background: #FFFFFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.allplans .table.active {
+  opacity: 1;
+  z-index: 1;
 }
 .allplans .table tbody {
   width: 100%;
@@ -1255,15 +1266,23 @@ main {
   padding: 16px 12px;
   width: 100%;
 }
+.allplans .table tr:nth-child(odd) {
+  background: #FFFFFF;
+}
 .allplans .table td {
   width: 25.5%;
-  border: 1px solid;
 }
 .allplans .table td:first-child {
   width: 20%;
 }
 .allplans .table td:not(:first-child) {
   text-align: center;
+}
+.allplans .table .checked {
+  background: url(../img/checked.svg) no-repeat center;
+}
+.allplans .table .checked-error {
+  background: url(../img/error-checked.svg) no-repeat center;
 }
 
 .footer {

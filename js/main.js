@@ -70,4 +70,16 @@ $(document).ready(function () {
         $(".plan-block").removeClass("active")
         $(this).addClass("active")
     })
+
+    // table tabs
+    $(".plan-block").on("click", ".plan-block:not(.active)", function(){
+        $(this).addClass("active")
+            .siblings()
+            .removeClass("active")
+            .closest(".container")
+            .find(".plan-table .table")
+            .removeClass("active")
+            .eq($(this).index())
+            .addClass("active")
+    })
 });
