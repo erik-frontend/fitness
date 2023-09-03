@@ -1362,10 +1362,49 @@ main {
   letter-spacing: 0.09px;
 }
 .program-plan .package-reserve {
+  color: #1C1C1E;
   max-width: 399px;
   width: 100%;
   border-radius: 20px;
   background: #FFFFFF;
+  padding: 24px;
+}
+.program-plan .program-plan-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.program-plan .package-title {
+  font-family: "GeneralSans-Medium";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #1C1C1E;
+  letter-spacing: 0.09px;
+}
+.program-plan .package-text {
+  font-family: "GeneralSans-Regular";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #636366;
+  letter-spacing: 0.08px;
+  margin-bottom: 32px;
+}
+.program-plan .features-list-subtitle {
+  font-family: "GeneralSans-Semibold";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  margin-bottom: 16px;
+}
+.program-plan .features-list-items {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .footer {
