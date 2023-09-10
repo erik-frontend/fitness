@@ -77,4 +77,6 @@ $(document).ready(function () {
             .eq($(this).index())
             .addClass("active")
     })
+
+    $(".select").select2()
 });

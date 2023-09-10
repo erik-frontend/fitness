@@ -2104,6 +2104,38 @@ main {
   letter-spacing: 0.07px;
   margin: 32px 0 8px;
 }
+.program-plan .select option {
+  width: 350px;
+}
+.program-plan .select {
+  width: 350px;
+}
+.program-plan .select2-container .select2-selection--single {
+  height: 52px;
+}
+.program-plan .select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 14px 36px 14px 16px;
+}
+.program-plan .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #AEAEB2;
+  font-family: "GeneralSans-Medium";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.08px;
+}
+.program-plan .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #292D32 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 20px 15px 0 15px;
+  height: 0;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
 
 .footer {
   background: #08172D;
