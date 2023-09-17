@@ -78,5 +78,7 @@ $(document).ready(function () {
             .addClass("active")
     })
 
-    $(".select").select2()
+    $(".select").select2({
+        placeholder: 'Select an option'
+    })
 });

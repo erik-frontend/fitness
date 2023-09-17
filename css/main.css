@@ -848,6 +848,11 @@ input {
   font: inherit;
 }
 
+select {
+  color: inherit;
+  font: inherit;
+}
+
 body {
   font-family: "GeneralSans-Medium";
   font-size: 16px;
@@ -2127,14 +2132,20 @@ main {
 .program-plan .select2-container--default .select2-selection--single .select2-selection__arrow b {
   border-color: #292D32 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   border-style: solid;
-  border-width: 20px 15px 0 15px;
+  border-width: 10px 10px 0 10px;
   height: 0;
-  left: 50%;
-  margin-left: -4px;
-  margin-top: -2px;
+  left: auto;
+  margin-left: -16px;
+  margin-top: 8px;
   position: absolute;
   top: 50%;
   width: 0;
+}
+.program-plan .select2-results__option--selectable {
+  color: #AEAEB2;
+}
+.program-plan .select2-container--default .select2-results > .select2-results__options li {
+  color: #AEAEB2 !important;
 }
 
 .footer {
