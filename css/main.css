@@ -2141,11 +2141,43 @@ main {
   top: 50%;
   width: 0;
 }
-.program-plan .select2-results__option--selectable {
+.program-plan .select2-container--default .select2-selection--single {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 16px;
+}
+.program-plan .price-permonth {
+  margin: 32px 0;
+}
+.program-plan .permonth-number {
+  color: #000000;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+}
+.program-plan .per-month-text {
+  color: #8E8E93;
+  font-family: "GeneralSans-Regular";
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 0.07px;
+}
+.program-plan button.btn.package-btn.plan-link {
+  max-width: 351px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 24px;
+  background: #BCFF5E;
+  margin: auto;
+}
+
+.select2-results__option {
   color: #AEAEB2;
 }
-.program-plan .select2-container--default .select2-results > .select2-results__options li {
-  color: #AEAEB2 !important;
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  color: #FFFFFF;
 }
 
 .footer {
