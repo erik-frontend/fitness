@@ -2195,6 +2195,53 @@ main {
   color: #FFFFFF;
 }
 
+.payment {
+  color: #09080D;
+  padding: 74px 0 120px;
+}
+.payment-title {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.16px;
+  margin-bottom: 48px;
+}
+.payment-vrapper {
+  display: flex;
+}
+.payment-detales {
+  max-width: 722px;
+  width: 100%;
+}
+.payment-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+.payment-method {
+  display: flex;
+  align-items: center;
+  padding: 24px 16px;
+  border-radius: 32px;
+  border: 1px solid #E9EBED;
+  background: #FFFFFF;
+}
+.payment-method input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.payment-method input:checked ~ label::before {
+  background: url(../img/checked-payment.svg) no-repeat center;
+}
+.payment-method label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #E9EBED;
+}
+
 .footer {
   background: #08172D;
   color: #AEAEB2;
