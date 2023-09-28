@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-navbar container">
+            <a href="/" class="header-logo"><img src="img/Logo-blue.svg" alt="logo"></a>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="item">
+                        <a href="index.html" class="link">Home</a>
+                    </li>
+                    <li class="item">
+                        <a class="link active">Programs</a>
+                    </li>
+                    <li class="item">
+                        <a href="trainnig.html" class="link">Trainers</a>
+                    </li>
+                    <li class="item">
+                        <a href="membership.html" class="link">Membership</a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-block">
+                <a href="" class="cart">
+                    <img src="img/cart-black.svg" alt="cart">
+                </a>
+                <div class="acuont">
+                    <a href="" class="link">Log In</a>
+                    <a href="" class="link active">Sign Up</a>
+                </div>
+            </div>
+            <div class="burger-black burger"></div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="payment">
+            <div class="container">
+                <form class="payment-form">
+                <h1 class="payment-title">Get your package</h1>
+                <div class="payment-vrapper">
+                    <div class="payment-detales">
+                        <span class="payment-subtitle">Pay with</span>
+                        <div class="payment-method">
+                            <input type="radio" name="pay" id="paypal">
+                            <label for="paypal" class="paypal"></label>
+                        </div>
+                        <div class="payment-method">
+                            <input type="radio" name="pay" id="pay">
+                            <label for="pay" class="pay"></label>
+                        </div>
+                        <span class="payment-text">Or  using a credit card</span>
+                        <div class="payment-field">
+                            <label for="" class="cardholder">Cardholder Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="payment-field">
+                            <label for="" class="card-number">Card Number</label>
+                            <input type="text" placeholder=" Ex:  31111 1111 1111 1111">
+                        </div>
+                        <div class="payment-code">
+                            <div class="code-info">
+                                <label for="">Postal Code</label>
+                                <input type="text" placeholder=" Postal or ZIP code">
+                            </div>
+                            <div class="code-info">
+                                <label for="">Expiration</label>
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                            <div class="code-info">
+                                <label for="">CVV</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="save-card">
+                            <input type="radio" name="" id="save-card">
+                            <label for="save-card">Save card</label>
+                        </div>
+                        <button class="btn payment-btn" type="submit">Confirm and pay</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top-block">
+                    <span class="footer-logo"><img src="img/footer-logo.svg" alt="logo"></span>
+                    <p class="footer-text">Get fit, stay healthy, and live life on their terms without fitness being an
+                        obstacle.</p>
+                </div>
+                <div class="footer-top-block">
+                    <ul class="footer-menu">
+                        <li class="footer-item">
+                            <a href="" class="footer-link">Home</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">Programs</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">Membership</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">Blog</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">Contact</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-link">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-block">
+                    <form action="" class="footer-form">
+                        <span class="form-title">Newsletter</span>
+                        <div class="footer-form-block">
+                            <input type="email" placeholder="Your email here">
+                            <button class="btn form-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copyright">© 2023 Nguli® Global Inc.</span>
+                <div class="social">
+                    <a href="" class="social-link">
+                        <img src="img/fb.svg" alt="icon">
+                    </a>
+                    <a href="" class="social-link">
+                        <img src="img/in.svg" alt="icon">
+                    </a>
+                    <a href="" class="social-link">
+                        <img src="img/tw.svg" alt="icon">
+                    </a>
+                    <a href="" class="social-link">
+                        <img src="img/yt.svg" alt="icon">
+                    </a>
+                    <a href="" class="social-link">
+                        <img src="img/insta.svg" alt="icon">
+                    </a>
+                </div>
+                <ul class="footer-bottom-menu">
+                    <li class="footer-bottom-item">
+                        <a href="" class="footer-bottom-link">Terms of Service</a>
+                    </li>
+                    <li class="footer-bottom-item">
+                        <a href="" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
