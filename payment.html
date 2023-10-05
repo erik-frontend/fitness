@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment</title>
     <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header-navbar container">
@@ -46,50 +48,79 @@
     <main>
         <section class="payment">
             <div class="container">
-                <form class="payment-form">
-                <h1 class="payment-title">Get your package</h1>
-                <div class="payment-vrapper">
-                    <div class="payment-detales">
-                        <span class="payment-subtitle">Pay with</span>
-                        <div class="payment-method">
-                            <input type="radio" name="pay" id="paypal">
-                            <label for="paypal" class="paypal"></label>
-                        </div>
-                        <div class="payment-method">
-                            <input type="radio" name="pay" id="pay">
-                            <label for="pay" class="pay"></label>
-                        </div>
-                        <span class="payment-text">Or  using a credit card</span>
-                        <div class="payment-field">
-                            <label for="" class="cardholder">Cardholder Name</label>
-                            <input type="text">
-                        </div>
-                        <div class="payment-field">
-                            <label for="" class="card-number">Card Number</label>
-                            <input type="text" placeholder=" Ex:  31111 1111 1111 1111">
-                        </div>
-                        <div class="payment-code">
-                            <div class="code-info">
-                                <label for="">Postal Code</label>
-                                <input type="text" placeholder=" Postal or ZIP code">
+                <div class="payment-wrapper">
+                    <form class="payment-form">
+                        <h1 class="payment-title">Get your package</h1>
+                        <div class="payment-vrapper">
+                            <div class="payment-detales">
+                                <span class="payment-subtitle">Pay with</span>
+                                <div class="payment-method">
+                                    <input type="radio" name="pay" id="paypal">
+                                    <label for="paypal" class="paypal"></label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" name="pay" id="pay">
+                                    <label for="pay" class="pay"></label>
+                                </div>
+                                <span class="payment-text">Or using a credit card</span>
+                                <div class="payment-field">
+                                    <label for="" class="cardholder">Cardholder Name</label>
+                                    <input type="text">
+                                </div>
+                                <div class="payment-field">
+                                    <label for="" class="card-number">Card Number</label>
+                                    <input type="text" placeholder=" Ex:  31111 1111 1111 1111">
+                                </div>
+                                <div class="payment-code">
+                                    <div class="code-info">
+                                        <label for="">Postal Code</label>
+                                        <input type="text" placeholder=" Postal or ZIP code">
+                                    </div>
+                                    <div class="code-info">
+                                        <label for="">Expiration</label>
+                                        <input type="text" placeholder="MM/YY">
+                                    </div>
+                                    <div class="code-info">
+                                        <label for="">CVV</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="save-card">
+                                    <input type="checkbox" name="radio" id="save-card">
+                                    <label for="save-card">Save card</label>
+                                </div>
+                                <button class="btn payment-btn" type="submit">Confirm and pay</button>
                             </div>
-                            <div class="code-info">
-                                <label for="">Expiration</label>
-                                <input type="text" placeholder="MM/YY">
-                            </div>
-                            <div class="code-info">
-                                <label for="">CVV</label>
-                                <input type="text">
-                            </div>
                         </div>
-                        <div class="save-card">
-                            <input type="radio" name="" id="save-card">
-                            <label for="save-card">Save card</label>
+                    </form>
+                    <div class="payment-reserve">
+                        <div class="price-permonth">
+                            <span class="permonth-number">$149.00</span>
+                            <span class="per-month-text">/Month</span>
                         </div>
-                        <button class="btn payment-btn" type="submit">Confirm and pay</button>
+                        <div>
+                            <span class="payment-serve-title">Basic Plan</span>
+                            <p class="payment-serve-text">It’s a long estabilished fact that a reader will be distracted by
+                                the readable content</p>
+                        </div>
+
+                        <div class="features-list">
+                            <span class="features-list-subtitle">What’s Includes:</span>
+                            <ul class="features-list-items">
+                                <li class="features-item">8 classes per month</li>
+                                <li class="features-item">All in basic payment</li>
+                                <li class="features-item">1-on-1 personal trainning</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <span class="select-title">Package Duration</span>
+                            <select class="select" data-minimum-results-for-search="Infinity">
+                                <option value="1 Month">1 Month</option>
+                                <option value="1 Month">1 Month</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                </form>
             </div>
         </section>
     </main>
@@ -171,4 +202,5 @@
     <script src="js/select2.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
