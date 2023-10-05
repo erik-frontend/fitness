@@ -2224,6 +2224,7 @@ main {
   border-radius: 32px;
   border: 1px solid #E9EBED;
   background: #FFFFFF;
+  margin-top: 24px;
 }
 .payment-method input {
   width: 0;
@@ -2233,6 +2234,9 @@ main {
 .payment-method input:checked ~ label::before {
   background: url(../img/checked-payment.svg) no-repeat center;
 }
+.payment-method label {
+  width: 100%;
+}
 .payment-method label::before {
   content: "";
   display: block;
@@ -2240,6 +2244,86 @@ main {
   height: 24px;
   border-radius: 50%;
   border: 1px solid #E9EBED;
+}
+.payment-method .paypal {
+  background: url(../img/paypal.svg) no-repeat left 60px center;
+}
+.payment-method .pay {
+  background: url(../img/applepay.svg) no-repeat left 60px center;
+}
+.payment-text {
+  display: block;
+  color: #8E8E93;
+  letter-spacing: 0.08px;
+  margin: 32px 0;
+}
+.payment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.payment-field label {
+  color: #1C1C1E;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.07px;
+}
+.payment-field input {
+  max-width: 721px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 24px;
+  border: 1px solid #E9EBED;
+  background: #FFFFFF;
+}
+.payment-code {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 24px;
+}
+.payment-code .code-info {
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.payment-code .code-info input {
+  padding: 14px 16px;
+  border-radius: 24px;
+  border: 1px solid #E9EBED;
+  background: #FFFFFF;
+}
+.payment-code label {
+  color: #1C1C1E;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.07px;
+}
+.payment .save-card {
+  margin-bottom: 48px;
+}
+.payment .save-card label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+.payment .save-card label::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #E9EBED;
+}
+.payment .save-card input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.payment .save-card input:checked ~ label::before {
+  background: url(../img/checked-payment.svg) no-repeat center;
 }
 
 .footer {
