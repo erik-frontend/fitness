@@ -2580,6 +2580,55 @@ main {
   letter-spacing: 0.09px;
 }
 
+.contact {
+  padding: 74px 0 120px;
+}
+.contact-title {
+  color: #1C1C1E;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 80px;
+  letter-spacing: 0.36px;
+}
+.contact-title span {
+  font-family: "GeneralSans-Regular";
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 400;
+}
+.contact-subtitle {
+  color: #636366;
+  font-family: "GeneralSans-Regular";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.08px;
+  width: 462px;
+  padding-bottom: 32px;
+}
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 721px;
+  width: 100%;
+}
+.contact-form label {
+  color: #1C1C1E;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.07px;
+  margin-bottom: 8px;
+}
+.contact-form input {
+  border-radius: 24px;
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+}
+
 .footer {
   background: #08172D;
   color: #AEAEB2;
