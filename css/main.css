@@ -2724,6 +2724,56 @@ main {
   background-image: url(../img/sms.svg);
 }
 
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  max-width: 596px;
+  width: 100%;
+  padding: 48px;
+  border-radius: 24px;
+  background: #FFFFFF;
+  box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
+}
+.pop-up .logo {
+  display: block;
+  width: 123px;
+  margin: 0 auto;
+}
+.pop-up .title {
+  color: #1C1C1E;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.16px;
+  margin: 32px 0 48px;
+}
+.pop-up .title span {
+  font-weight: 400;
+}
+.pop-up .contaniu-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.pop-up .contaniu-list button {
+  padding: 16px 32px 16px 68px;
+  border-radius: 24px;
+  border: 1px solid #E9EBED;
+  font-size: 13px;
+  letter-spacing: 0.07px;
+  background-repeat: no-repeat;
+  background-position: left 32px center;
+}
+.pop-up .contaniu-list .google-btn {
+  background-image: url(../img/icon-google.svg);
+}
+.pop-up .contaniu-list .apple-btn {
+  background-image: url(../img/icon-apple.svg);
+}
+
 .footer {
   background: #08172D;
   color: #AEAEB2;
