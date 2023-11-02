@@ -2736,13 +2736,19 @@ main {
   border-radius: 24px;
   background: #FFFFFF;
   box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
+  color: #1C1C1E;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.07px;
 }
-.pop-up .logo {
+
+.logo {
   display: block;
   width: 123px;
   margin: 0 auto;
 }
-.pop-up .title {
+
+.title {
   color: #1C1C1E;
   text-align: center;
   font-size: 32px;
@@ -2750,28 +2756,100 @@ main {
   letter-spacing: 0.16px;
   margin: 32px 0 48px;
 }
-.pop-up .title span {
+.title span {
   font-weight: 400;
 }
-.pop-up .contaniu-list {
+
+.contaniu-list {
   display: flex;
   gap: 24px;
   justify-content: center;
 }
-.pop-up .contaniu-list button {
+.contaniu-list button {
   padding: 16px 32px 16px 68px;
   border-radius: 24px;
   border: 1px solid #E9EBED;
   font-size: 13px;
-  letter-spacing: 0.07px;
   background-repeat: no-repeat;
   background-position: left 32px center;
 }
-.pop-up .contaniu-list .google-btn {
+.contaniu-list .google-btn {
   background-image: url(../img/icon-google.svg);
 }
-.pop-up .contaniu-list .apple-btn {
+.contaniu-list .apple-btn {
   background-image: url(../img/icon-apple.svg);
+}
+
+.other-method {
+  display: flex;
+  color: #8E8E93;
+  text-align: center;
+  margin: 32px 0 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+}
+.other-method::before, .other-method::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 1px;
+  background: #E9EBED;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.form input {
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid #E9EBED;
+  background: #FFFFFF;
+  padding: 14px 0 14px 16px;
+  color: #AEAEB2;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+.form .form-btn {
+  width: 100%;
+  border-radius: 24px;
+  background: #BCFF5E;
+  padding: 16px;
+  color: #1C1C1E;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+}
+.form .block-action {
+  margin: 32px 0 48px;
+}
+.form .block-action input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.form .block-action label {
+  flex-direction: row;
+  color: #AEAEB2;
+  padding-left: 36px;
+  position: relative;
+}
+.form .block-action label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #EAEDF1;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form .block-action label a {
+  color: #064BB4;
 }
 
 .footer {
