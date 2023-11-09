@@ -41,12 +41,7 @@ $(document).ready(function () {
         $(".nav").toggleClass("active");
     })
 
-    // acount link
-    $(".acuont .link").click(function(e){
-        e.preventDefault()
-        $(".acuont .link").removeClass("active")
-        $(this).addClass("active")
-    })
+    
 
     // tabs
     $(".tab-block-title").click(function(){
@@ -78,11 +73,33 @@ $(document).ready(function () {
             .addClass("active")
     })
 
-    $(".select").select2({
-        placeholder: 'Select an option'
-    })
+
+    if(!".select"){
+        return
+    }
+    else {
+        $(".select").select2({
+            placeholder: 'Select an option'
+        })
+    }
+    
 
     // pop-up
 
+    $("#singup").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up").addClass("active")
+        // acount link
+        $(".acuont .link").removeClass("active")
+        $(this).addClass("active")
+    });
+
+    $(".pop-up-close").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up").removeClass("active")
+        $(".acuont .link").removeClass("active")
+    });
+
+    
     
 });

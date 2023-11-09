@@ -38,8 +38,8 @@
                         <img src="img/cart.svg" alt="cart">
                     </a>
                     <div class="acuont">
-                        <a href="" class="link">Log In</a>
-                        <a href="" class="link active">Sign Up</a>
+                        <a href="" class="link" id="login">Log In</a>
+                        <a href="" class="link" id="singup">Sign Up</a>
                     </div>
                 </div>
                 <div class="burger"></div>
@@ -412,9 +412,27 @@
         </form>
         <button class="pop-up-close"></button>
         </div>
+        <div class="pop-up-block pop-up-login">
+            <span class="logo"><img src="img/logo-popup.svg" alt="logo"></span>
+            <h3 class="title">Hey there, welome back!</h3>
+            <form class="form">
+                <label for="">
+                    Email
+                    <input type="email" id="" placeholder="Enter your email">
+                </label>
+                <label for="">
+                    Password
+                    <input type="password" id="" placeholder="Enter your password">
+                </label>
+                <button class="form-btn">Login</button>
+                <a href="" class="pop-up-login-link">Forgot Password?</a>
+        </form>
+        <button class="pop-up-close"></button>
+        </div>
     </div>
 
     <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
