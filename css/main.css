@@ -2918,6 +2918,31 @@ main {
   padding: 16px;
   text-align: center;
 }
+.pop-up-login .label-password {
+  position: relative;
+}
+.pop-up-login .label-password .eye-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/eye-slash.svg) no-repeat center;
+  bottom: 19px;
+  right: 16px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.pop-up-login .label-password .eye-active {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/eye-open.svg) no-repeat center;
+  bottom: 19px;
+  right: 16px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
 
 .footer {
   background: #08172D;

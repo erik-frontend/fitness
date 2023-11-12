@@ -100,6 +100,22 @@ $(document).ready(function () {
         $(".acuont .link").removeClass("active")
     });
 
-    
+    // change password attribute
+    let type = $("#password").attr("type")
+    // console.log(type);
+        $("#tooglePassword").click(function () { 
+            console.log("click");
+
+            if($(this).hasClass("eye-icon")){
+                $(this).removeClass("eye-icon")
+                $(this).addClass("eye-active")
+                $("#password").attr("type", "text")
+            } else {
+                $(this).removeClass("eye-active")
+                $(this).addClass("eye-icon")
+                $("#password").attr("type", "password")
+            }
+        });
+        
     
 });
