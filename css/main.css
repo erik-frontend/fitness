@@ -889,6 +889,9 @@ body {
   flex-direction: column;
   min-width: 320px;
 }
+body.hiden {
+  overflow-y: hidden;
+}
 
 main {
   flex: 1;
@@ -945,7 +948,16 @@ main {
 }
 
 .header {
+  height: 88px;
+}
+.header-fixed {
   padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #064BB4;
 }
 .header-navbar {
   display: flex;
@@ -1045,9 +1057,6 @@ main {
   padding-bottom: 98px;
   background: #064BB4;
 }
-.hero .header {
-  background-color: #064BB4;
-}
 .hero .header .link {
   color: #FFFFFF;
   opacity: 0.56;
@@ -1060,7 +1069,7 @@ main {
   color: #FFFFFF;
   opacity: 1;
 }
-.hero .header .acuont .link.active {
+.hero .header .acuont .link.active, .hero .header .acuont .link:hover {
   background: #BCFF5E;
   color: #1C1C1E;
 }
@@ -2725,21 +2734,17 @@ main {
 }
 
 .pop-up {
-  position: absolute;
-  z-index: 5;
+  position: fixed;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
   visibility: hidden;
   opacity: 0;
   transition: 0.4s linear;
-  visibility: visible;
-  opacity: 1;
-  z-index: 10;
 }
 .pop-up.active {
   background: rgba(9, 8, 13, 0.12);
@@ -2768,6 +2773,10 @@ main {
   transform: translate(-50%, -50%);
   z-index: -1;
   opacity: 0;
+}
+.pop-up-signup.active {
+  z-index: 3;
+  opacity: 1;
 }
 .pop-up-close {
   position: absolute;
@@ -2904,7 +2913,11 @@ main {
   margin-left: 5px;
 }
 .pop-up-login {
-  z-index: 1;
+  z-index: -1;
+  opacity: 0;
+}
+.pop-up-login.active {
+  z-index: 3;
   opacity: 1;
 }
 .pop-up-login .title {

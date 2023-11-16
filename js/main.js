@@ -89,6 +89,19 @@ $(document).ready(function () {
     $("#singup").click(function (e) { 
         e.preventDefault();
         $(".pop-up").addClass("active")
+        $(".pop-up-signup").addClass("active")
+        $("body").addClass("hiden")
+        // acount link
+        $(".acuont .link").removeClass("active")
+        $(this).addClass("active")
+    });
+
+    $("#login, .form-login a").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up").addClass("active")
+        $(".pop-up-login").addClass("active")
+        $(".pop-up-signup").removeClass("active")
+        $("body").addClass("hiden")
         // acount link
         $(".acuont .link").removeClass("active")
         $(this).addClass("active")
@@ -97,7 +110,9 @@ $(document).ready(function () {
     $(".pop-up-close").click(function (e) { 
         e.preventDefault();
         $(".pop-up").removeClass("active")
+        $(".pop-up-block").removeClass("active")
         $(".acuont .link").removeClass("active")
+        $("body").removeClass("hiden")
     });
 
     // change password attribute
@@ -116,6 +131,7 @@ $(document).ready(function () {
                 $("#password").attr("type", "password")
             }
         });
-        
+
+            
     
 });
