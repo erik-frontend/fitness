@@ -950,6 +950,11 @@ main {
 .header {
   height: 88px;
 }
+@media (max-width: 590px) {
+  .header {
+    height: 140px;
+  }
+}
 .header-fixed {
   padding: 20px 0;
   position: fixed;
@@ -957,7 +962,12 @@ main {
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: #064BB4;
+  background-color: #F9F9FB;
+}
+@media (max-width: 590px) {
+  .header-fixed {
+    height: 140px;
+  }
 }
 .header-navbar {
   display: flex;
@@ -1063,6 +1073,9 @@ main {
 }
 .hero .header .link:hover {
   opacity: 1;
+}
+.hero .header .header-fixed {
+  background-color: #064bb4;
 }
 .hero .header .acuont .link {
   border: 1px solid #FFFFFF;
@@ -2774,9 +2787,16 @@ main {
   z-index: -1;
   opacity: 0;
 }
-.pop-up-signup.active {
-  z-index: 3;
-  opacity: 1;
+@media (max-width: 640px) {
+  .pop-up-block {
+    max-width: 90%;
+    padding: 35px 20px;
+  }
+}
+@media (max-width: 590px) {
+  .pop-up-block {
+    padding: 35px 20px;
+  }
 }
 .pop-up-close {
   position: absolute;
@@ -2810,6 +2830,24 @@ main {
   gap: 24px;
   justify-content: center;
 }
+@media (max-width: 590px) {
+  .pop-up .contaniu-list {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+}
+@media (max-width: 390px) {
+  .pop-up .contaniu-list {
+    width: 100%;
+  }
+  .pop-up .contaniu-list li {
+    width: 100%;
+  }
+  .pop-up .contaniu-list li button {
+    width: 100%;
+  }
+}
 .pop-up .contaniu-list button {
   padding: 16px 32px 16px 68px;
   border-radius: 24px;
@@ -2833,12 +2871,27 @@ main {
   justify-content: center;
   gap: 19px;
 }
+@media (max-width: 590px) {
+  .pop-up .other-method {
+    margin: 20px 0 20px;
+  }
+}
 .pop-up .other-method::before, .pop-up .other-method::after {
   content: "";
   display: block;
   width: 180px;
   height: 1px;
   background: #E9EBED;
+}
+@media (max-width: 590px) {
+  .pop-up .other-method::before, .pop-up .other-method::after {
+    width: 25%;
+  }
+}
+@media (max-width: 390px) {
+  .pop-up .other-method::before, .pop-up .other-method::after {
+    width: 20%;
+  }
 }
 .pop-up .form label {
   display: flex;
@@ -2870,6 +2923,11 @@ main {
 .pop-up .form .block-action {
   margin: 32px 0 48px;
 }
+@media (max-width: 590px) {
+  .pop-up .form .block-action {
+    margin: 32px 0;
+  }
+}
 .pop-up .form .block-action input {
   width: 0;
   height: 0;
@@ -2885,6 +2943,11 @@ main {
   padding-left: 36px;
   position: relative;
   cursor: pointer;
+}
+@media (max-width: 590px) {
+  .pop-up .form .block-action label {
+    flex-wrap: wrap;
+  }
 }
 .pop-up .form .block-action label::before {
   content: "";
@@ -2912,6 +2975,20 @@ main {
   color: #064BB4;
   margin-left: 5px;
 }
+.pop-up-signup.active {
+  z-index: 3;
+  opacity: 1;
+}
+@media (max-width: 590px) {
+  .pop-up-signup .title {
+    margin: 25px 0;
+  }
+}
+@media (max-width: 390px) {
+  .pop-up-signup .title {
+    font-size: 27px;
+  }
+}
 .pop-up-login {
   z-index: -1;
   opacity: 0;
@@ -2923,6 +3000,12 @@ main {
 .pop-up-login .title {
   width: 336px;
   margin: 32px auto 48px;
+}
+@media (max-width: 450px) {
+  .pop-up-login .title {
+    margin: 20px auto 25px;
+    width: 100%;
+  }
 }
 .pop-up-login-link {
   display: block;
