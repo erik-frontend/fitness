@@ -2748,15 +2748,15 @@ main {
 
 .pop-up {
   position: fixed;
-  z-index: -1;
+  z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transition: 0.4s linear;
 }
 .pop-up.active {
@@ -2910,16 +2910,6 @@ main {
   line-height: 24px;
   letter-spacing: 0.08px;
 }
-.pop-up .form .form-btn {
-  width: 100%;
-  border-radius: 24px;
-  background: #BCFF5E;
-  padding: 16px;
-  color: #1C1C1E;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.08px;
-}
 .pop-up .form .block-action {
   margin: 32px 0 48px;
 }
@@ -2974,6 +2964,16 @@ main {
 .pop-up .form .form-login a {
   color: #064BB4;
   margin-left: 5px;
+}
+.pop-up .form-btn {
+  width: 100%;
+  border-radius: 24px;
+  background: #BCFF5E;
+  padding: 16px;
+  color: #1C1C1E;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
 }
 .pop-up-signup.active {
   z-index: 3;
@@ -3038,6 +3038,64 @@ main {
   z-index: 2;
   cursor: pointer;
   transition: 0.3s linear;
+}
+.pop-up .pop-up-confirm {
+  opacity: 1;
+  visibility: visible;
+}
+.pop-up .pop-up-confirm .title {
+  margin: 32px 0 12px;
+}
+.pop-up .pop-up-confirm .subtitle {
+  display: block;
+  color: #7D7C84;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  width: 352px;
+  margin: 0 auto 48px;
+}
+.pop-up .pop-up-confirm .form-btn {
+  margin-top: 40px;
+}
+.pop-up .pop-up-confirm .form-action {
+  color: #8E8E93;
+  font-size: 18px;
+  letter-spacing: 0.09px;
+  position: relative;
+  padding-left: 32px;
+}
+.pop-up .pop-up-confirm .form-action + .form-action {
+  margin-top: 32px;
+}
+.pop-up .pop-up-confirm .form-action input {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.pop-up .pop-up-confirm .form-action input:checked ~ label::before {
+  background: url(../img/check.svg) no-repeat center;
+}
+.pop-up .pop-up-confirm .form-action label {
+  position: relative;
+  display: block;
+  line-height: 26px;
+}
+.pop-up .pop-up-confirm .form-action label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #EAEDF1;
+  border-radius: 4px;
+  position: absolute;
+  left: -36px;
+  top: 0;
+}
+.pop-up .pop-up-confirm .form-action span {
+  display: block;
+  line-height: 26px;
 }
 
 .footer {
