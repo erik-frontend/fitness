@@ -86,6 +86,13 @@ $(document).ready(function () {
 
     // pop-up
 
+    function handleClick(){
+        $(".pop-up").addClass("active")
+        $(".pop-up-signup").removeClass("active")
+        $("body").addClass("hiden")
+        // $(this).addClass("active")
+    }
+
     $("#singup").click(function (e) { 
         e.preventDefault();
         $(".pop-up").addClass("active")
@@ -98,13 +105,10 @@ $(document).ready(function () {
 
     $("#login, .form-login a").click(function (e) { 
         e.preventDefault();
-        $(".pop-up").addClass("active")
         $(".pop-up-login").addClass("active")
-        $(".pop-up-signup").removeClass("active")
-        $("body").addClass("hiden")
+        handleClick()
         // acount link
         $(".acuont .link").removeClass("active")
-        $(this).addClass("active")
     });
 
     $(".pop-up-close").click(function (e) { 
@@ -114,6 +118,12 @@ $(document).ready(function () {
         $(".acuont .link").removeClass("active")
         $("body").removeClass("hiden")
     });
+
+    $(".pop-up-login-link").click(function(e){
+        e.preventDefault();
+        $(".pop-up-login").removeClass("active")
+        $(".pop-up-confirm").addClass("active")
+    })
 
     // change password attribute
     let type = $("#password").attr("type")

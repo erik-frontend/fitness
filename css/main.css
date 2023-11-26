@@ -2755,9 +2755,11 @@ main {
   left: 0;
   width: 100vw;
   height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s linear;
   visibility: visible;
   opacity: 1;
-  transition: 0.4s linear;
 }
 .pop-up.active {
   background: rgba(9, 8, 13, 0.12);
@@ -3040,8 +3042,12 @@ main {
   transition: 0.3s linear;
 }
 .pop-up .pop-up-confirm {
+  opacity: 0;
+  z-index: -1;
+}
+.pop-up .pop-up-confirm.active {
   opacity: 1;
-  visibility: visible;
+  z-index: 3;
 }
 .pop-up .pop-up-confirm .title {
   margin: 32px 0 12px;
@@ -3096,6 +3102,39 @@ main {
 .pop-up .pop-up-confirm .form-action span {
   display: block;
   line-height: 26px;
+}
+.pop-up-sequrity {
+  opacity: 1;
+}
+.pop-up-sequrity .title {
+  margin: 32px 0 12px;
+}
+.pop-up-sequrity .subtitle {
+  text-align: center;
+  display: block;
+  color: #7D7C84;
+  font-weight: 400;
+  letter-spacing: 0.08px;
+  margin-bottom: 48px;
+}
+.pop-up-sequrity .sequrity-block {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.pop-up-sequrity .sequrity-block input {
+  border-radius: 24px;
+  border: 1px solid #E9EBED;
+  background: #FFFFFF;
+  width: 56px;
+  height: 56px;
+  color: var(--grayscale-100, #1C1C1E);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.12px;
 }
 
 .footer {
