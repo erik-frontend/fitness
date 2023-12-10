@@ -86,18 +86,23 @@ $(document).ready(function () {
 
     // pop-up
 
-    function handleClick(){
+    function showPopup() {
         $(".pop-up").addClass("active")
-        $(".pop-up-signup").removeClass("active")
         $("body").addClass("hiden")
-        // $(this).addClass("active")
     }
+
+    function hidePopup() {
+        $(".pop-up").removeClass("active")
+        $(".pop-up-block").removeClass("active")
+        $(".acuont .link").removeClass("active")
+        $("body").removeClass("hiden")
+    }
+
 
     $("#singup").click(function (e) { 
         e.preventDefault();
-        $(".pop-up").addClass("active")
+        showPopup()
         $(".pop-up-signup").addClass("active")
-        $("body").addClass("hiden")
         // acount link
         $(".acuont .link").removeClass("active")
         $(this).addClass("active")
@@ -106,17 +111,14 @@ $(document).ready(function () {
     $("#login, .form-login a").click(function (e) { 
         e.preventDefault();
         $(".pop-up-login").addClass("active")
-        handleClick()
+        showPopup()
         // acount link
         $(".acuont .link").removeClass("active")
     });
 
     $(".pop-up-close").click(function (e) { 
         e.preventDefault();
-        $(".pop-up").removeClass("active")
-        $(".pop-up-block").removeClass("active")
-        $(".acuont .link").removeClass("active")
-        $("body").removeClass("hiden")
+        hidePopup()
     });
 
     $(".pop-up-login-link").click(function(e){
@@ -124,6 +126,12 @@ $(document).ready(function () {
         $(".pop-up-login").removeClass("active")
         $(".pop-up-confirm").addClass("active")
     })
+
+    $(".btn-confirm").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up-confirm").removeClass("active")
+        $(".pop-up-sequrity").addClass("active")
+    });
 
     // change password attribute
     let type = $("#password").attr("type")
