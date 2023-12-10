@@ -133,6 +133,12 @@ $(document).ready(function () {
         $(".pop-up-sequrity").addClass("active")
     });
 
+    $(".pop-up-sequrity .form-btn").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up-sequrity").removeClass("active")
+        $(".pop-up-reset").addClass("active")
+    });
+
     // change password attribute
     let type = $("#password").attr("type")
     // console.log(type);
