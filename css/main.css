@@ -3230,6 +3230,42 @@ main {
   line-height: 24px;
   letter-spacing: 0.08px;
 }
+.pop-up-newpassword {
+  opacity: 0;
+  z-index: -1;
+}
+.pop-up-newpassword.active {
+  opacity: 1;
+  z-index: 2;
+}
+.pop-up-newpassword .label-password {
+  position: relative;
+}
+.pop-up-newpassword .label-password .eye-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/eye-slash.svg) no-repeat center;
+  bottom: 19px;
+  right: 16px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.pop-up-newpassword .label-password .eye-active {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url(../img/eye-open.svg) no-repeat center;
+  bottom: 19px;
+  right: 16px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.pop-up-newpassword .form-btn {
+  margin-top: 16px;
+}
 
 .footer {
   background: #08172D;

@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    $(".program-block").click(function(){
+    $(".program-block").click(function () {
         $(".program-block").removeClass("active")
         $(this).addClass("active")
     })
 
     // membership
 
-    $(".membership-plan").click(function(){
+    $(".membership-plan").click(function () {
         $(".membership-plan").removeClass("active")
         $(this).addClass("active")
     })
@@ -29,22 +29,22 @@ $(document).ready(function () {
         ]
     })
 
-    $(".slider-review .slick-btn").click(function (e) { 
+    $(".slider-review .slick-btn").click(function (e) {
         e.preventDefault();
         $(".slider-review .slick-btn").removeClass("active")
         $(this).addClass("active")
     });
 
     // burger menu
-    $(".burger").click(function(){
+    $(".burger").click(function () {
         $(".burger").toggleClass("active");
         $(".nav").toggleClass("active");
     })
 
-    
+
 
     // tabs
-    $(".tab-block-title").click(function(){
+    $(".tab-block-title").click(function () {
         $(".tab-block-title").removeClass("active")
         $(".tab-content").slideUp();
         $(this).siblings().slideDown();
@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     // video
 
-    $(".video-btn").click(function (e) { 
+    $(".video-btn").click(function (e) {
         e.preventDefault();
         $(".trainning-video").addClass("hide")
         $(".video-btn").addClass("hide")
@@ -61,8 +61,8 @@ $(document).ready(function () {
     });
 
     // table tabs
-    
-    $(".plans").on("click", ".plan-block:not(.active)", function(){
+
+    $(".plans").on("click", ".plan-block:not(.active)", function () {
         $(this).addClass("active")
             .siblings()
             .removeClass("active")
@@ -74,7 +74,7 @@ $(document).ready(function () {
     })
 
 
-    if(!".select"){
+    if (!".select") {
         return
     }
     else {
@@ -82,7 +82,7 @@ $(document).ready(function () {
             placeholder: 'Select an option'
         })
     }
-    
+
 
     // pop-up
 
@@ -99,7 +99,7 @@ $(document).ready(function () {
     }
 
 
-    $("#singup").click(function (e) { 
+    $("#singup").click(function (e) {
         e.preventDefault();
         showPopup()
         $(".pop-up-signup").addClass("active")
@@ -108,7 +108,7 @@ $(document).ready(function () {
         $(this).addClass("active")
     });
 
-    $("#login, .form-login a").click(function (e) { 
+    $("#login, .form-login a").click(function (e) {
         e.preventDefault();
         $(".pop-up-login").addClass("active")
         showPopup()
@@ -116,51 +116,87 @@ $(document).ready(function () {
         $(".acuont .link").removeClass("active")
     });
 
-    $(".pop-up-close").click(function (e) { 
+    $(".pop-up-close").click(function (e) {
         e.preventDefault();
         hidePopup()
     });
 
-    $(".pop-up-login-link").click(function(e){
+    $(".pop-up-login-link").click(function (e) {
         e.preventDefault();
         $(".pop-up-login").removeClass("active")
         $(".pop-up-confirm").addClass("active")
     })
 
-    $(".btn-confirm").click(function (e) { 
+    $(".btn-confirm").click(function (e) {
         e.preventDefault();
         $(".pop-up-confirm").removeClass("active")
         $(".pop-up-sequrity").addClass("active")
     });
 
-    $(".pop-up-sequrity .form-btn").click(function (e) { 
+    $(".pop-up-sequrity .form-btn").click(function (e) {
         e.preventDefault();
         $(".pop-up-sequrity").removeClass("active")
         $(".pop-up-reset").addClass("active")
     });
-    $(".pop-up-reset .form-btn").click(function (e) { 
+
+    $(".pop-up-reset .form-btn").click(function (e) {
         e.preventDefault();
         $(".pop-up-reset").removeClass("active")
         $(".pop-up-verification").addClass("active")
     });
 
+    $(".pop-up-verification .form-btn").click(function (e) {
+        e.preventDefault();
+        $(".pop-up-verification").removeClass("active")
+        $(".pop-up-newpassword").addClass("active")
+    });
+
     // change password attribute
     let type = $("#password").attr("type")
+    let newtype = $("#new-password").attr("type")
     // console.log(type);
-        $("#tooglePassword").click(function () { 
-            console.log("click");
+    $("#tooglePassword").click(function () {
+        console.log("click");
 
-            if($(this).hasClass("eye-icon")){
-                $(this).removeClass("eye-icon")
-                $(this).addClass("eye-active")
-                $("#password").attr("type", "text")
-            } else {
-                $(this).removeClass("eye-active")
-                $(this).addClass("eye-icon")
-                $("#password").attr("type", "password")
-            }
-        });
+        if ($(this).hasClass("eye-icon")) {
+            $(this).removeClass("eye-icon")
+            $(this).addClass("eye-active")
+            $("#password").attr("type", "text")
+        } else {
+            $(this).removeClass("eye-active")
+            $(this).addClass("eye-icon")
+            $("#password").attr("type", "password")
+        }
+    });
 
-            
-    
+    $("#tooglenewPassword").click(function () {
+        // console.log("click");
+
+        if ($(this).hasClass("eye-icon")) {
+            $(this).removeClass("eye-icon")
+            $(this).addClass("eye-active")
+            $("#new-password").attr("type", "text")
+        } else {
+            $(this).removeClass("eye-active")
+            $(this).addClass("eye-icon")
+            $("#new-password").attr("type", "password")
+        }
+    });
+
+    $("#tooglePassword-one").click(function () {
+        console.log("click");
+
+        if ($(this).hasClass("eye-icon")) {
+            $(this).removeClass("eye-icon")
+            $(this).addClass("eye-active")
+            $("#password-one").attr("type", "text")
+        } else {
+            $(this).removeClass("eye-active")
+            $(this).addClass("eye-icon")
+            $("#password-one").attr("type", "password")
+        }
+    });
+
+
+
 });
