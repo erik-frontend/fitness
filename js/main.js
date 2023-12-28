@@ -111,6 +111,7 @@ $(document).ready(function () {
     $("#login, .form-login a").click(function (e) {
         e.preventDefault();
         $(".pop-up-login").addClass("active")
+        $(".pop-up-signup").removeClass("active")
         showPopup()
         // acount link
         $(".acuont .link").removeClass("active")
@@ -149,6 +150,24 @@ $(document).ready(function () {
         e.preventDefault();
         $(".pop-up-verification").removeClass("active")
         $(".pop-up-newpassword").addClass("active")
+    });
+
+    $(".pop-up-login .form-btn").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up-login").removeClass("active")
+        $(".pop-up-welcome").addClass("active")
+    });
+
+    $(".success-btn").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up-success").removeClass("active")
+        hidePopup()
+    });
+
+    $(".pop-up-newpassword .form-btn").click(function (e) { 
+        e.preventDefault();
+        $(".pop-up-newpassword").removeClass("active")
+        $(".success").addClass("active")
     });
 
     // change password attribute
