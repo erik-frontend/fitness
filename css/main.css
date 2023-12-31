@@ -1960,6 +1960,16 @@ main {
   position: relative;
   height: 620px;
 }
+@media (max-width: 768px) {
+  .allplans .plan-table {
+    height: 820px;
+  }
+}
+@media (max-width: 540px) {
+  .allplans .plan-table {
+    height: 920px;
+  }
+}
 .allplans .table {
   display: block;
   width: 100%;
@@ -2008,6 +2018,11 @@ main {
 }
 .allplans .table td:not(:first-child) {
   text-align: center;
+}
+@media (max-width: 768px) {
+  .allplans .table td {
+    font-size: 14px;
+  }
 }
 .allplans .table .checked {
   background: url(../img/checked.svg) no-repeat center;
@@ -3343,6 +3358,11 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   width: 296px;
+}
+@media (max-width: 768px) {
+  .footer-menu {
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 450px) {
   .footer-top-block {
