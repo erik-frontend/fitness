@@ -1673,6 +1673,11 @@ main {
   cursor: pointer;
   margin-bottom: 0;
 }
+@media (max-width: 450px) {
+  .faqs .tab-block-title {
+    padding-right: 25px;
+  }
+}
 .faqs .tab-block-title::after {
   content: "";
   width: 24px;
