@@ -108,13 +108,20 @@ $(document).ready(function () {
         $(this).addClass("active")
     });
 
-    $("#login, .form-login a").click(function (e) {
+    $("#login").click(function (e) {
         e.preventDefault();
         $(".pop-up-login").addClass("active")
         $(".pop-up-signup").removeClass("active")
         showPopup()
         // acount link
-        $(".acuont .link").removeClass("active")
+        $(this).addClass("active")
+    });
+
+    $(".form-login a").click(function (e) {
+        e.preventDefault();
+        $(".pop-up-login").addClass("active")
+        $(".pop-up-signup").removeClass("active")
+        showPopup()
     });
 
     $(".pop-up-close").click(function (e) {

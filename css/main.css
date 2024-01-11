@@ -1056,6 +1056,10 @@ main {
   border-radius: 20px;
   transition: 0.3s linear;
 }
+.header .acuont .link:hover {
+  background: #bcff5e;
+  color: #1c1c1e;
+}
 .header .acuont .link.active {
   background: #BCFF5E;
   color: #1C1C1E;
